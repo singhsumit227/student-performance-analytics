@@ -40,8 +40,4 @@ These are project rules, not official college grading rules.
 5. The report is printed in the terminal and `student_analysis_output.csv` is created.
 
 
-## Before submitting
-- Run the program yourself and inspect the results.
-- Replace or personalize the student details if your trainer expects your own dataset.
-- Add your name, course/batch and screenshots to the documentation.
-- Make sure you understand the grade and pass/fail rules because the assessment focuses on understanding, not only output.
+
