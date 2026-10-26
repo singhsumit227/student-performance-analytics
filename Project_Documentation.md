@@ -2,10 +2,10 @@
 
 ## 1. Project Title and Student Details
 **Project Title:** Student Performance Analytics System  
-**Student Name:** [Enter your name]  
+**Student Name:** [Sumit Singh]  
 **Course:** Python with AI  
 **Institute/Training Provider:** EWB Courses  
-**Submission Date:** [Enter date]
+**Submission Date:** [26/10/2026]
 
 ## 2. Objective
 The objective of this project is to analyze student marks and attendance using Python. It calculates each student's total and average marks, assigns a grade, identifies pass/fail status, compares subject performance, and finds top performers. This reduces manual calculation and presents results in a readable format.
@@ -58,18 +58,23 @@ A student passes only if every subject mark is at least 40 **and** attendance is
 - Grade distribution
 
 ## 7. Output / Screenshots
-**Insert screenshots after running `python main.py`:**
-1. Terminal output showing class statistics and student-wise summary.
-2. Subject-wise average and top performer output.
-3. The generated `student_analysis_output.csv` file (optional).
+   ![Dataset overview](screenshots/01_overview.png)
+   ![Student summary](screenshots/02_summary.png)
+   ![Subject analysis and top performers](screenshots/03_subjects_top.png)
+   ![Failed students and departments](screenshots/04_failed_dept.png)
 
 Do not insert screenshots until you have run the program and confirmed the output.
 
 ## 8. Final Outcome
-The system converts the CSV student dataset into a structured performance report. It demonstrates Python fundamentals, reusable functions, loops, conditions, NumPy numerical operations and Pandas data analysis.
+For the 20-student dataset the system found:
+- **16 passed, 4 failed** (80% pass rate)
+- Overall class average: **71.95**
+- Highest average: **Isha Mishra (94.00)**; lowest: **Arjun Yadav (39.25)**
+- Best subject: **AI (74.30)**; weakest: **Python (69.50)**
+- Top 3: Isha Mishra, Myra Kapoor, Rohan Singh
+- Department averages: Data Science 76.89, CSE 74.11, IT 63.67
 
 ## 9. Challenges and Learning
-**Use only what is true for your own work; edit this section after testing.** Possible learning points include:
 - Reading CSV data into a DataFrame.
 - Selecting subject columns for calculations.
 - Writing reusable functions for grades and pass/fail logic.
@@ -78,7 +83,7 @@ The system converts the CSV student dataset into a structured performance report
 - Exporting processed results to a new CSV file.
 
 ## 10. GitHub Repository
-**Repository URL:** [Paste your public GitHub repository URL here]
+**Repository URL:** [https://github.com/singhsumit227/student-performance-analytics]
 
 ## How to Run
 Install dependencies with `python -m pip install -r requirements.txt`, then run `python main.py`.
