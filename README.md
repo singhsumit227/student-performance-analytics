@@ -31,4 +31,4 @@ python main.py
 ```
 
 ## Author
-[YOUR NAME] – Python with AI, EWB Courses
+[Sumit Singh] – Python with AI, EWB Courses

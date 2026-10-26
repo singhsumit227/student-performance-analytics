@@ -2,10 +2,10 @@
 
 ## 1. Project Title
 **Project:** Student Performance Analytics System
-**Student Name:** [YOUR NAME]
+**Student Name:** [Sumit Singh]
 **Course / Batch:** Python with AI, EWB Courses
 **University:** Shri Ramswaroop Memorial University, Lucknow
-**Submission Date:** [DATE]
+**Submission Date:** [26/10/2026]
 
 ## 2. Objective
 Calculating totals, averages, grades and pass/fail results by hand for many students is slow and error-prone. This project automates it: it reads student marks and attendance from a CSV file, analyzes them with Python, NumPy and Pandas, and prints a clear report of student, subject and department performance.
@@ -55,7 +55,10 @@ Attendance is used only for the pass/fail rule, not for total or average marks.
 - Input validation and CSV export of results
 
 ## 7. Output / Screenshots
-[Add screenshots here after running `python main.py`: (1) dataset overview, (2) class statistics and student summary, (3) subject analysis and top performers.]
+   ![Dataset overview](screenshots/01_overview.png)
+   ![Student summary](screenshots/02_summary.png)
+   ![Subject analysis and top performers](screenshots/03_subjects_top.png)
+   ![Failed students and departments](screenshots/04_failed_dept.png)
 
 ## 8. Final Outcome
 For the 20-student dataset the system found:
@@ -69,10 +72,16 @@ For the 20-student dataset the system found:
 The report is readable without opening the code, and the results are saved to a CSV file.
 
 ## 9. Challenges and Learning
-[Write this in your own words. Mention real problems you hit and how you solved them, for example: deciding the pass/fail rule, choosing between loops and vectorized Pandas operations, handling invalid data, or pushing to GitHub.]
+- Output bug: the headings printed a literal \n because the code used "\\n" instead of "\n". I fixed it and re-ran the program to check the output.
+- Pass/fail rule: using only the average could let a student pass with a very low subject mark. I set the rule to at least 40 in every subject and at least 75% attendance.
+- NumPy and Pandas: I learned that Pandas handles the DataFrame and NumPy does the numerical calculations (np.sum, np.mean, np.max, np.min, np.std).
+- Data validation: I added checks for missing columns, blank values and marks outside 0–100, so wrong data cannot give wrong results.
+
+Learning
+- I learned to load CSV data into a DataFrame, write reusable functions, use loops, apply NumPy for numerical work and Pandas for grouping and sorting. I also learned to test the output, fix bugs and document the project.
 
 ## 10. GitHub Repository
-[PASTE YOUR GITHUB REPOSITORY URL HERE]
+[https://github.com/singhsumit227/student-performance-analytics]
 
 ## How to Run
 ```bash
