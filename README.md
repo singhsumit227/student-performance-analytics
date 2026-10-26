@@ -39,8 +39,6 @@ These are project rules, not official college grading rules.
    ```
 5. The report is printed in the terminal and `student_analysis_output.csv` is created.
 
-## GitHub submission
-Create a **public** repository named `student-performance-analytics` (or another clear name), upload all project files, and confirm that `main.py`, `functions.py`, `students.csv`, this README and the documentation are visible. Add screenshots of a successful run if your trainer requires them. Submit the repository URL in the EWB Google Form.
 
 ## Before submitting
 - Run the program yourself and inspect the results.
