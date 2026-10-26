@@ -2,10 +2,10 @@
 
 ## 1. Project Title
 **Project:** Student Performance Analytics System
-**Student Name:** [Sumit Singh]
+**Student Name:** Sumit Singh
 **Course / Batch:** Python with AI, EWB Courses
 **University:** Shri Ramswaroop Memorial University, Lucknow
-**Submission Date:** [26/10/2026]
+**Submission Date:** 26/10/2026
 
 ## 2. Objective
 Calculating totals, averages, grades and pass/fail results by hand for many students is slow and error-prone. This project automates it: it reads student marks and attendance from a CSV file, analyzes them with Python, NumPy and Pandas, and prints a clear report of student, subject and department performance.
