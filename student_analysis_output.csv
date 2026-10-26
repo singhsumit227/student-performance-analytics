@@ -1,0 +1,21 @@
+Student_ID,Name,Department,Python,Mathematics,Database,AI,Attendance,Total_Marks,Average_Marks,Grade,Result
+S001,Aarav Sharma,CSE,85,78,92,88,95,343,85.75,A+,Pass
+S002,Diya Verma,CSE,72,81,76,90,89,319,79.75,A,Pass
+S003,Rohan Singh,Data Science,91,94,89,87,96,361,90.25,A+,Pass
+S004,Ananya Gupta,IT,66,74,70,79,85,289,72.25,A,Pass
+S005,Vivaan Patel,Data Science,58,62,55,68,72,243,60.75,B,Fail
+S006,Isha Mishra,CSE,95,91,97,93,98,376,94.0,A+,Pass
+S007,Aditya Kumar,IT,43,51,48,56,75,198,49.5,D,Pass
+S008,Saanvi Joshi,Data Science,77,83,80,82,91,322,80.5,A+,Pass
+S009,Arjun Yadav,CSE,32,45,39,41,68,157,39.25,F,Fail
+S010,Meera Das,IT,88,86,84,90,94,348,87.0,A+,Pass
+S011,Kabir Khan,Data Science,69,73,71,65,80,278,69.5,B,Pass
+S012,Aditi Rao,CSE,81,89,85,92,97,347,86.75,A+,Pass
+S013,Reyansh Jain,IT,54,57,61,59,78,231,57.75,C,Pass
+S014,Myra Kapoor,Data Science,93,88,95,91,99,367,91.75,A+,Pass
+S015,Ishaan Roy,CSE,47,39,52,44,66,182,45.5,D,Fail
+S016,Pari Saxena,IT,74,70,78,76,88,298,74.5,A,Pass
+S017,Atharv Bose,Data Science,62,68,64,71,83,265,66.25,B,Pass
+S018,Kiara Nair,CSE,86,92,88,85,93,351,87.75,A+,Pass
+S019,Dev Malhotra,IT,38,42,35,49,70,164,41.0,D,Fail
+S020,Tara Chawla,Data Science,79,76,82,80,90,317,79.25,A,Pass

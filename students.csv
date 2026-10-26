@@ -1,0 +1,21 @@
+Student_ID,Name,Department,Python,Mathematics,Database,AI,Attendance
+S001,Aarav Sharma,CSE,85,78,92,88,95
+S002,Diya Verma,CSE,72,81,76,90,89
+S003,Rohan Singh,Data Science,91,94,89,87,96
+S004,Ananya Gupta,IT,66,74,70,79,85
+S005,Vivaan Patel,Data Science,58,62,55,68,72
+S006,Isha Mishra,CSE,95,91,97,93,98
+S007,Aditya Kumar,IT,43,51,48,56,75
+S008,Saanvi Joshi,Data Science,77,83,80,82,91
+S009,Arjun Yadav,CSE,32,45,39,41,68
+S010,Meera Das,IT,88,86,84,90,94
+S011,Kabir Khan,Data Science,69,73,71,65,80
+S012,Aditi Rao,CSE,81,89,85,92,97
+S013,Reyansh Jain,IT,54,57,61,59,78
+S014,Myra Kapoor,Data Science,93,88,95,91,99
+S015,Ishaan Roy,CSE,47,39,52,44,66
+S016,Pari Saxena,IT,74,70,78,76,88
+S017,Atharv Bose,Data Science,62,68,64,71,83
+S018,Kiara Nair,CSE,86,92,88,85,93
+S019,Dev Malhotra,IT,38,42,35,49,70
+S020,Tara Chawla,Data Science,79,76,82,80,90
