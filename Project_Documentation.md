@@ -1,69 +1,61 @@
 # Project Documentation: Student Performance Analytics System
 
-## 1. Project Title and Student Details
-**Project Title:** Student Performance Analytics System  
-**Student Name:** [Sumit Singh]  
-**Course:** Python with AI  
-**Institute/Training Provider:** EWB Courses  
-**Submission Date:** [26/10/2026]
+## 1. Project Title
+**Project:** Student Performance Analytics System
+**Student Name:** [YOUR NAME]
+**Course / Batch:** Python with AI, EWB Courses
+**University:** Shri Ramswaroop Memorial University, Lucknow
+**Submission Date:** [DATE]
 
 ## 2. Objective
-The objective of this project is to analyze student marks and attendance using Python. It calculates each student's total and average marks, assigns a grade, identifies pass/fail status, compares subject performance, and finds top performers. This reduces manual calculation and presents results in a readable format.
+Calculating totals, averages, grades and pass/fail results by hand for many students is slow and error-prone. This project automates it: it reads student marks and attendance from a CSV file, analyzes them with Python, NumPy and Pandas, and prints a clear report of student, subject and department performance.
 
 ## 3. Technologies Used
-- Python
-- NumPy
-- Pandas
-- CSV file for storing the dataset
+- Python 3
+- NumPy (numerical calculations)
+- Pandas (DataFrame loading, grouping, sorting)
+- CSV (dataset storage)
+- Git and GitHub (version control and submission)
 
 ## 4. Dataset Description
-The project uses `students.csv`, a sample dataset containing 20 fictional student records. The columns are:
-- `Student_ID`: unique student identifier
-- `Name`: student name
-- `Department`: student's department
-- `Python`, `Mathematics`, `Database`, `AI`: marks out of 100
-- `Attendance`: attendance percentage
+`students.csv` holds **20 fictional student records** with 8 columns:
 
-Attendance is used for the pass/fail condition and is not included in the marks total or average.
+| Column | Meaning |
+|---|---|
+| Student_ID | Unique ID (S001–S020) |
+| Name | Student name |
+| Department | CSE, IT or Data Science |
+| Python, Mathematics, Database, AI | Marks out of 100 |
+| Attendance | Attendance percentage |
+
+Attendance is used only for the pass/fail rule, not for total or average marks.
 
 ## 5. Implementation
-1. `main.py` locates and loads the CSV dataset with `pandas.read_csv()`.
-2. It checks that required columns exist, that the dataset is not empty, and that marks/attendance are numeric and between 0 and 100.
-3. `functions.py` defines reusable functions for calculations, grading, pass/fail checks and reporting.
-4. Pandas calculates each student's total and average across the four subjects. NumPy is used to round averages to two decimal places.
-5. A loop processes each row and applies the grade and pass/fail functions.
-6. The report shows student-level results, class statistics, subject averages, department averages, top performer(s) and grade distribution.
-7. The analyzed dataset is saved as `student_analysis_output.csv`.
+1. `main.py` loads `students.csv` with `pd.read_csv()`.
+2. It validates the data: file exists, required columns present, no blank or non-numeric values, all values between 0 and 100.
+3. `show_data_overview()` prints the record count, columns, first 5 rows and data types.
+4. `calculate_total_and_average()` converts the four subject columns to a NumPy array and uses `np.sum` and `np.mean` along `axis=1` for each student.
+5. `process_student_records()` loops over every row, calling `assign_grade()` and `assign_result()`.
+6. `subject_analysis()` loops over the subjects and uses `np.mean`, `np.max`, `np.min` and `np.std` for each, and finds the subject topper.
+7. `get_top_students()` sorts by average and returns the top 3.
+8. `print_report()` prints the full analysis, and the processed data is saved to `student_analysis_output.csv`.
 
-## 6. Key Features and Rules
-### Grade rule
-- A+: average >= 80
-- A: average >= 70 and below 80
-- B: average >= 60 and below 70
-- C: average >= 50 and below 60
-- D: average >= 40 and below 50
-- F: average below 40
+**Grading rule:** A+ (average ≥ 80), A (≥ 70), B (≥ 60), C (≥ 50), D (≥ 40), F (< 40).
+**Pass rule:** at least 40 in every subject **and** attendance of at least 75%; otherwise Fail.
 
-### Pass/fail rule
-A student passes only if every subject mark is at least 40 **and** attendance is at least 75%. Otherwise, the student fails. These are the rules selected for this project and may not match institutional rules.
-
-### Main outputs
-- Total and average marks for every student
-- Grade and pass/fail result
-- Highest and lowest student average
-- Overall class average
-- Subject-wise average marks
-- Top-performing student(s)
-- Department-wise average
-- Grade distribution
+## 6. Key Features
+- `show_data_overview()` – dataset information
+- `calculate_total_and_average()` – NumPy-based totals and averages
+- `assign_grade()` – grade from average
+- `assign_result()` – pass/fail from marks and attendance
+- `process_student_records()` – applies all rules in a loop
+- `subject_analysis()` – subject average, highest, lowest, std deviation and topper
+- `get_top_students()` – ranked top performers
+- `print_report()` – readable final report, including reasons for each failure
+- Input validation and CSV export of results
 
 ## 7. Output / Screenshots
-   ![Dataset overview](screenshots/01_overview.png)
-   ![Student summary](screenshots/02_summary.png)
-   ![Subject analysis and top performers](screenshots/03_subjects_top.png)
-   ![Failed students and departments](screenshots/04_failed_dept.png)
-
-Do not insert screenshots until you have run the program and confirmed the output.
+[Add screenshots here after running `python main.py`: (1) dataset overview, (2) class statistics and student summary, (3) subject analysis and top performers.]
 
 ## 8. Final Outcome
 For the 20-student dataset the system found:
@@ -74,16 +66,16 @@ For the 20-student dataset the system found:
 - Top 3: Isha Mishra, Myra Kapoor, Rohan Singh
 - Department averages: Data Science 76.89, CSE 74.11, IT 63.67
 
+The report is readable without opening the code, and the results are saved to a CSV file.
+
 ## 9. Challenges and Learning
-- Reading CSV data into a DataFrame.
-- Selecting subject columns for calculations.
-- Writing reusable functions for grades and pass/fail logic.
-- Validating data to avoid incorrect calculations.
-- Summarizing performance by subject and department.
-- Exporting processed results to a new CSV file.
+[Write this in your own words. Mention real problems you hit and how you solved them, for example: deciding the pass/fail rule, choosing between loops and vectorized Pandas operations, handling invalid data, or pushing to GitHub.]
 
 ## 10. GitHub Repository
-**Repository URL:** [https://github.com/singhsumit227/student-performance-analytics]
+[PASTE YOUR GITHUB REPOSITORY URL HERE]
 
 ## How to Run
-Install dependencies with `python -m pip install -r requirements.txt`, then run `python main.py`.
+```bash
+python -m pip install -r requirements.txt
+python main.py
+```

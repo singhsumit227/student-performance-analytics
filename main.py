@@ -2,7 +2,7 @@
 
 from pathlib import Path
 import pandas as pd
-from functions import process_student_records, print_report
+from functions import show_data_overview, process_student_records, print_report
 
 DATA_FILE = Path(__file__).parent / "students.csv"
 OUTPUT_FILE = Path(__file__).parent / "student_analysis_output.csv"
@@ -20,7 +20,7 @@ def main():
         "Student_ID", "Name", "Department", "Python",
         "Mathematics", "Database", "AI", "Attendance"
     ]
-    missing_columns = [column for column in required_columns if column not in data.columns]
+    missing_columns = [c for c in required_columns if c not in data.columns]
     if missing_columns:
         print("Error: Missing required columns:", ", ".join(missing_columns))
         return
@@ -41,10 +41,11 @@ def main():
         print("Error: Marks and attendance must be between 0 and 100.")
         return
 
+    show_data_overview(data)
     analyzed_data = process_student_records(data)
     print_report(analyzed_data)
     analyzed_data.to_csv(OUTPUT_FILE, index=False)
-    print(f"\\nDetailed results saved to: {OUTPUT_FILE.name}")
+    print(f"\nDetailed results saved to: {OUTPUT_FILE.name}")
 
 
 if __name__ == "__main__":

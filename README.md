@@ -1,43 +1,34 @@
 # Student Performance Analytics System
 
-A beginner-friendly Python data-analysis mini project using **Python, NumPy and Pandas**. It analyzes a CSV dataset of 20 students and reports marks, averages, grades, pass/fail status, subject performance and top performers.
+A Python data-analysis project using **Python, NumPy and Pandas**. It reads a CSV of 20 students and reports totals, averages, grades, pass/fail status, subject-wise performance, department averages and top performers.
 
 ## Features
-- Reads student records from `students.csv` into a Pandas DataFrame.
-- Uses NumPy/Pandas operations to calculate total and average marks.
-- Uses reusable functions, loops and conditions.
-- Assigns grades from the student's average.
-- Checks pass/fail using subject marks and attendance.
-- Shows class statistics, subject-wise averages, department averages and grade distribution.
-- Saves the detailed result to `student_analysis_output.csv`.
+- Loads `students.csv` into a Pandas DataFrame and shows an overview
+- Validates the data before analysis
+- NumPy-based total, average and subject statistics
+- Reusable functions and loops
+- Grades, pass/fail with reasons, top 3 performers
+- Exports results to `student_analysis_output.csv`
 
 ## Rules used
-- Subjects: Python, Mathematics, Database and AI; each is marked out of 100.
-- Grade: A+ = 80–100, A = 70–79.99, B = 60–69.99, C = 50–59.99, D = 40–49.99, F = below 40.
-- Pass: at least 40 marks in **every subject** and attendance of at least 75%.
-- Attendance is not included in total or average marks.
-
-These are project rules, not official college grading rules.
+- Subjects: Python, Mathematics, Database, AI (each out of 100)
+- Grade: A+ ≥ 80, A ≥ 70, B ≥ 60, C ≥ 50, D ≥ 40, F < 40 (based on average)
+- Pass: at least 40 in every subject and attendance ≥ 75%
 
 ## Files
-- `main.py` — entry point; loads, validates, analyzes and exports data.
-- `functions.py` — reusable calculation and reporting functions.
-- `students.csv` — sample dataset with 20 fictional student records.
-- `Project_Documentation.md` — project report template/details.
-- `requirements.txt` — required Python libraries.
+| File | Purpose |
+|---|---|
+| `main.py` | Entry point: load, validate, analyze, export |
+| `functions.py` | Reusable calculation and reporting functions |
+| `students.csv` | Dataset (20 records) |
+| `Project_Documentation.md` | Full project documentation |
+| `requirements.txt` | Dependencies |
 
-## Run the project
-1. Install Python 3.10+.
-2. Open a terminal in this folder.
-3. Install dependencies:
-   ```bash
-   python -m pip install -r requirements.txt
-   ```
-4. Run:
-   ```bash
-   python main.py
-   ```
-5. The report is printed in the terminal and `student_analysis_output.csv` is created.
+## Run
+```bash
+python -m pip install -r requirements.txt
+python main.py
+```
 
-
-
+## Author
+[YOUR NAME] – Python with AI, EWB Courses
